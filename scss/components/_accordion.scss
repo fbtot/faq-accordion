@@ -1,1 +1,14 @@
 @use "../index" as *;
+
+/* ========================== § FUNCTIONALITY === */
+.faq__answer {
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.hide {
+}
+
+.show {
+  height: unset !important;
+}
