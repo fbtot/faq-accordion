@@ -1,0 +1,33 @@
+$base-font-size: 12px;
+$small-font-size: 16px * 0.9;
+$desktop-width: 800px;
+$mobile-width: $desktop-width - 1px;
+
+:root {
+  // Colors
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%); // gradient
+  --soft-blue: hsl(240, 73%, 65%); // gradient
+  --grey300: hsl(0, 0%, 70%);
+  --grey500: hsl(0, 0%, 50%);
+  --dark-greyish-blue: hsl(249, 6%, 50%);
+  --light-greyish-blue: hsl(240, 5%, 91%);
+
+  // Colors by element
+  --text-color100: hsl(238, 29%, 16%);
+  --text-color300: hsl(237, 12%, 33%);
+  --accent-color: var(--soft-red);
+  --divider-color: var(--light-grayish-blue);
+
+  // Typography
+  --base-font-size: #{$base-font-size};
+  --small-font-size: #{$small-font-size};
+  --body-font-family: "Kumbh Sans", sans-serif;
+  --headings-font-family: "Kumbh Sans", sans-serif;
+  --h1-font-size: 2.7rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --h4-font-size: 1.3rem;
+  --h5-font-size: 1.1rem;
+  --h6-font-size: 1rem;
+}
