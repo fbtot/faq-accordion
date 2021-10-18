@@ -160,21 +160,9 @@ button {
 
 /* ========================== § FUNCTIONALITY === */
 .faq__answer {
-  background-color: rgba(255, 0, 0, 0.1) !important;
-  outline: 1px solid rgba(255, 0, 0, 0.3) !important;
   overflow: hidden;
   transition: 0.3s ease-in-out;
   height: 0px;
-}
-.faq__answer:hover {
-  outline: 4px solid rgba(255, 0, 0, 0.8) !important;
-}
-.faq__answer * {
-  background-color: rgba(255, 0, 0, 0.1) !important;
-  outline: 1px solid rgba(255, 0, 0, 0.3) !important;
-}
-.faq__answer *:hover {
-  outline: 4px solid rgba(255, 0, 0, 0.8) !important;
 }
 
 .show {
