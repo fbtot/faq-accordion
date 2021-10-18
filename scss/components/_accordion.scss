@@ -1,12 +1,20 @@
 @use "../index" as *;
 
 /* ========================== § FUNCTIONALITY === */
+.faq {
+  background: white;
+  border-radius: 2rem;
+  margin: 1.5rem;
+  max-width: 920px;
+
+  @include mq($desktop-width, up) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .faq__answer {
   overflow: hidden;
   transition: 0.3s ease-in-out;
   height: 0px;
-}
-
-.show {
-  height: unset !important;
 }
