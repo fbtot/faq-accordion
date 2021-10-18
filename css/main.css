@@ -10,7 +10,7 @@
   --text-color100: hsl(238, 29%, 16%);
   --text-color300: hsl(237, 12%, 33%);
   --accent-color: var(--soft-red);
-  --divider-color: var(--light-grayish-blue);
+  --divider-color: var(--light-greyish-blue);
   --base-font-size: 12px;
   --small-font-size: 14.4px;
   --body-font-family: "Kumbh Sans", sans-serif;
