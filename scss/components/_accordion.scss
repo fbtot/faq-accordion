@@ -2,11 +2,10 @@
 
 /* ========================== § FUNCTIONALITY === */
 .faq__answer {
+  @include debug;
   overflow: hidden;
   transition: 0.3s ease-in-out;
-}
-
-.hide {
+  height: 0px;
 }
 
 .show {
