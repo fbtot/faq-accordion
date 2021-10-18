@@ -35,9 +35,16 @@ html {
 }
 
 body {
+  /* @mixin center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* end @mixin center */
   font-family: var(--body-font-family);
   color: var(--text-color);
-  background-color: #eeeeee;
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+  height: 100vh;
+  width: 100vw;
   line-height: 1.6em;
 }
 

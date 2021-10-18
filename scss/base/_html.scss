@@ -12,9 +12,12 @@ html {
 }
 
 body {
+  @include center(flex);
   font-family: var(--body-font-family);
   color: var(--text-color);
-  background-color: rgb(238, 238, 238);
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+  height: 100vh;
+  width: 100vw;
   line-height: 1.6em;
 }
 
