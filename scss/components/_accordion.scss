@@ -7,7 +7,7 @@
   max-width: 920px;
   padding: 2rem;
   margin: 1.5rem;
-
+  box-shadow: 0 2rem 4rem hsl(249, 42%, 46%);
   @include mq($desktop-width, down) {
     background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
     // background-size: 80%;
