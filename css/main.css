@@ -211,7 +211,13 @@ button {
 }
 
 .faq__title {
-  text-align: center;
+  /* @mixin mq */
+  /* end @mixin mq */
+}
+@media screen and (max-width: 799px) {
+  .faq__title {
+    text-align: center;
+  }
 }
 
 .faq__question {

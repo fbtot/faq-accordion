@@ -39,7 +39,9 @@
 }
 
 .faq__title {
-  text-align: center;
+  @include mq($desktop-width, down) {
+    text-align: center;
+  }
 }
 
 .faq__question {
