@@ -218,6 +218,10 @@ button {
   font-weight: normal;
   font-size: 1.1rem;
   padding: 1.3rem 0;
+  cursor: pointer;
+}
+.faq__question:hover {
+  color: var(--soft-red);
 }
 .faq__question.active {
   font-weight: bold;

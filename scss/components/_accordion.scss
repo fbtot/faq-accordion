@@ -46,6 +46,11 @@
   font-weight: normal;
   font-size: 1.1rem;
   padding: 1.3rem 0;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--soft-red);
+  }
 
   &.active {
     font-weight: bold;
