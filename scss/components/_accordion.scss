@@ -2,16 +2,25 @@
 
 /* ========================== § FUNCTIONALITY === */
 .faq {
-  background: white;
   border-radius: 2rem;
   margin: 1.5rem;
   max-width: 920px;
   padding: 2rem;
 
+  @include mq($desktop-width, down) {
+    background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
+    background-size: 80%;
+  }
+
+  @include mq($fixed-img-mobile-width, $desktop-width) {
+    background-size: 450px;
+  }
+
   @include mq($desktop-width, up) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    background: white;
   }
 }
 
@@ -26,17 +35,17 @@
 
     @include mq($desktop-width, down) {
       margin: 0 auto;
-      transform: translateY(-63%) translateX(-7%);
+      transform: translateY(-63%) translateX(-6%);
     }
   }
 }
 
 .faq__text {
-  @include mq(590px, $desktop-width - 1) {
-    margin-top: -250px;
+  @include mq($fixed-img-mobile-width, $desktop-width - 1) {
+    margin-top: -166px;
   }
-  @include mq(0, 590px) {
-    margin-top: -50%;
+  @include mq(0, $fixed-img-mobile-width) {
+    margin-top: -40%;
   }
 }
 

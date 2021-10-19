@@ -168,19 +168,34 @@ button {
 
 /* ========================== § FUNCTIONALITY === */
 .faq {
-  background: white;
   border-radius: 2rem;
   margin: 1.5rem;
   max-width: 920px;
   padding: 2rem;
   /* @mixin mq */
   /* end @mixin mq */
+  /* @mixin mq */
+  /* end @mixin mq */
+  /* @mixin mq */
+  /* end @mixin mq */
+}
+@media screen and (max-width: 799px) {
+  .faq {
+    background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
+    background-size: 80%;
+  }
+}
+@media screen and (min-width: 590px) and (max-width: 799px) {
+  .faq {
+    background-size: 450px;
+  }
 }
 @media screen and (min-width: 800px) {
   .faq {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
+    background: white;
   }
 }
 
@@ -198,7 +213,7 @@ button {
 @media screen and (max-width: 799px) {
   .faq__img img {
     margin: 0 auto;
-    transform: translateY(-63%) translateX(-7%);
+    transform: translateY(-63%) translateX(-6%);
   }
 }
 
@@ -210,12 +225,12 @@ button {
 }
 @media screen and (min-width: 590px) and (max-width: 798px) {
   .faq__text {
-    margin-top: -250px;
+    margin-top: -166px;
   }
 }
 @media screen and (min-width: 0) and (max-width: 589px) {
   .faq__text {
-    margin-top: -50%;
+    margin-top: -40%;
   }
 }
 
