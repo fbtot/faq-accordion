@@ -1,6 +1,5 @@
 const questionEl = document.getElementsByClassName("faq__question");
 const answerEl = document.getElementsByClassName("faq__answer");
-const paddingBottomAnswer = 12 + 0.7;
 
 for (let i = 0; i < questionEl.length; i++) {
   const question = questionEl[i];
@@ -8,7 +7,7 @@ for (let i = 0; i < questionEl.length; i++) {
   question.addEventListener("click", function () {
     if (nextElement.style.height === 0 + "px" || nextElement.offsetHeight === 1) {
       console.log(nextElement.offsetHeight);
-      nextElement.style.height = nextElement.scrollHeight + paddingBottomAnswer + "px";
+      nextElement.style.height = nextElement.scrollHeight + "px";
     } else {
       nextElement.style.height = 0;
     }

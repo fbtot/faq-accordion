@@ -243,14 +243,16 @@ button {
 }
 
 .faq__answer {
+  --padding-bottom: 1rem;
+  box-sizing: content-box;
   overflow: hidden;
   transition: 0.1s ease-in-out;
   height: 0px;
   border-bottom: 1px solid var(--divider-color);
 }
 .faq__answer.active {
-  margin-top: -0.6rem;
   padding-bottom: 1rem;
+  margin-top: -0.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */
