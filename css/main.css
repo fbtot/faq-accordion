@@ -44,8 +44,8 @@ body {
   font-family: var(--body-font-family);
   color: var(--text-color);
   background: linear-gradient(var(--soft-violet), var(--soft-blue));
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
   line-height: 1.6em;
 }
 
@@ -169,78 +169,92 @@ button {
 /* ========================== § FUNCTIONALITY === */
 .faq {
   border-radius: 2rem;
-  margin: 1.5rem;
+  position: relative;
   max-width: 920px;
   padding: 2rem;
-  /* @mixin mq */
-  /* end @mixin mq */
-  /* @mixin mq */
-  /* end @mixin mq */
-  /* @mixin mq */
-  /* end @mixin mq */
+  margin: 1.5rem;
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 989px) {
   .faq {
+    /* mixin mq */
     background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
+    margin-top: 200px;
+    padding-top: 0;
+    background-size: 400px;
+    /* end mixin mq */
+  }
+}
+@media screen and (max-width: 530px) {
+  .faq {
+    /* mixin mq */
     background-size: 80%;
+    /* end mixin mq */
   }
 }
-@media screen and (min-width: 590px) and (max-width: 799px) {
+@media screen and (min-width: 990px) {
   .faq {
-    background-size: 450px;
-  }
-}
-@media screen and (min-width: 800px) {
-  .faq {
+    /* mixin mq */
+    margin-left: 4rem;
+    padding: 3.6rem 9rem 6.8rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
-    background: white;
+    background-color: white;
+    background-image: url(../../images/illustration-woman-online-desktop.svg), url(../../images/bg-pattern-desktop.svg);
+    background-position: -82px 53px, -541px -269px;
+    background-repeat: no-repeat;
+    background-size: 51%, 100%;
+    /* end mixin mq */
   }
 }
 
 .faq__img {
-  text-align: center;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 50%;
 }
-.faq__img img {
+
+.faq__img--desktop {
+  position: absolute;
+  left: -93px;
+  top: 180px;
+}
+
+.faq__img--mobile {
   display: block;
   width: 100%;
-  max-width: 500px;
-  /* @mixin mq */
-  /* end @mixin mq */
+  max-width: 450px;
+  transform: translate(-5%, -50%);
 }
-@media screen and (max-width: 799px) {
-  .faq__img img {
-    margin: 0 auto;
-    transform: translateY(-63%) translateX(-6%);
+@media screen and (min-width: 990px) {
+  .faq__img--mobile {
+    /* mixin mq */
+    display: none;
+    /* end mixin mq */
   }
 }
 
-.faq__text {
-  /* @mixin mq */
-  /* end @mixin mq */
-  /* @mixin mq */
-  /* end @mixin mq */
-}
-@media screen and (min-width: 590px) and (max-width: 798px) {
-  .faq__text {
-    margin-top: -166px;
-  }
-}
-@media screen and (min-width: 0) and (max-width: 589px) {
-  .faq__text {
-    margin-top: -40%;
+@media screen and (max-width: 989px) {
+  .faq__img--desktop {
+    /* mixin mq */
+    display: none;
+    /* end mixin mq */
   }
 }
 
-.faq__title {
-  /* @mixin mq */
-  /* end @mixin mq */
-}
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 989px) {
   .faq__title {
+    /* mixin mq */
     text-align: center;
+    margin-top: -30%;
+    /* end mixin mq */
+  }
+}
+@media screen and (min-width: 590px) and (max-width: 989px) {
+  .faq__title {
+    /* mixin mq */
+    margin-top: -20%;
+    /* end mixin mq */
   }
 }
 

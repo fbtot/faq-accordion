@@ -3,55 +3,75 @@
 /* ========================== § FUNCTIONALITY === */
 .faq {
   border-radius: 2rem;
-  margin: 1.5rem;
+  position: relative;
   max-width: 920px;
   padding: 2rem;
+  margin: 1.5rem;
 
   @include mq($desktop-width, down) {
     background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
+    // background-size: 80%;
+    margin-top: 200px;
+    padding-top: 0;
+    background-size: 400px;
+  }
+
+  @include mq(531px, down) {
     background-size: 80%;
   }
 
-  @include mq($fixed-img-mobile-width, $desktop-width) {
-    background-size: 450px;
-  }
-
   @include mq($desktop-width, up) {
+    margin-left: 4rem;
+    padding: 3.6rem 9rem 6.8rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
-    background: white;
+    background-color: white;
+    background-image: url(../../images/illustration-woman-online-desktop.svg), url(../../images/bg-pattern-desktop.svg);
+    background-position: -82px 53px, -541px -269px;
+    background-repeat: no-repeat;
+    background-size: 51%, 100%;
   }
 }
 
 .faq__img {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
+
+.faq__img--desktop {
+  position: absolute;
+  left: -93px;
+  top: 180px;
+}
+
+.faq__img--mobile {
+  // top: -40%;
+  // left: 0;
+  display: block;
   width: 100%;
+  max-width: 450px;
+  transform: translate(-5%, -50%);
 
-  img {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-
-    @include mq($desktop-width, down) {
-      margin: 0 auto;
-      transform: translateY(-63%) translateX(-6%);
-    }
+  @include mq($desktop-width, up) {
+    display: none;
   }
 }
 
-.faq__text {
-  @include mq($fixed-img-mobile-width, $desktop-width - 1) {
-    margin-top: -166px;
-  }
-  @include mq(0, $fixed-img-mobile-width) {
-    margin-top: -40%;
+.faq__img--desktop {
+  @include mq($desktop-width, down) {
+    display: none;
   }
 }
 
 .faq__title {
   @include mq($desktop-width, down) {
     text-align: center;
+    margin-top: -30%;
+  }
+  @include mq($fixed-img-mobile-width, $desktop-width) {
+    margin-top: -20%;
   }
 }
 
