@@ -238,9 +238,13 @@ button {
 
 .faq__answer {
   overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   height: 0px;
   border-bottom: 1px solid var(--divider-color);
+}
+.faq__answer.active {
+  margin-top: -0.6rem;
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

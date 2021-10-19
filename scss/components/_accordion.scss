@@ -70,7 +70,13 @@
 
 .faq__answer {
   overflow: hidden;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   height: 0px;
   border-bottom: 1px solid var(--divider-color);
+
+  &.active {
+    // padding-top: 0.7rem;
+    margin-top: -0.6rem;
+    padding-bottom: 1rem;
+  }
 }
