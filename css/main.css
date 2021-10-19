@@ -243,7 +243,6 @@ button {
 }
 
 .faq__answer {
-  --padding-bottom: 1rem;
   box-sizing: content-box;
   overflow: hidden;
   transition: 0.1s ease-in-out;
