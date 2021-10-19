@@ -190,6 +190,7 @@ button {
 .faq__img img {
   display: block;
   width: 100%;
+  max-width: 500px;
   /* @mixin mq */
   /* end @mixin mq */
 }
@@ -203,8 +204,15 @@ button {
 .faq__text {
   /* @mixin mq */
   /* end @mixin mq */
+  /* @mixin mq */
+  /* end @mixin mq */
 }
-@media screen and (max-width: 799px) {
+@media screen and (min-width: 590px) and (max-width: 798px) {
+  .faq__text {
+    margin-top: -250px;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 589px) {
   .faq__text {
     margin-top: -50%;
   }

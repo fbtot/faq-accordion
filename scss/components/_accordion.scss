@@ -22,18 +22,20 @@
   img {
     display: block;
     width: 100%;
+    max-width: 500px;
 
     @include mq($desktop-width, down) {
       margin: 0 auto;
       transform: translateY(-63%) translateX(-7%);
-      // margin-top: -32%;
-      // transform: translateX(-7%);
     }
   }
 }
 
 .faq__text {
-  @include mq($desktop-width, down) {
+  @include mq(590px, $desktop-width - 1) {
+    margin-top: -250px;
+  }
+  @include mq(0, 590px) {
     margin-top: -50%;
   }
 }
