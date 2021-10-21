@@ -14,8 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile screenshot](./ss-mobile.jpg)
-![Desktop screenshot](./ss-desktop.jpg)
+![Mobile screenshot](./images/ss-mobile.jpg)
+![Desktop screenshot](./images/ss-desktop.jpg)
 
 ### Links
 
