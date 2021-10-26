@@ -178,7 +178,7 @@ button {
 @media screen and (max-width: 989px) {
   .faq {
     /* mixin mq */
-    background: white url(../../images/bg-pattern-mobile.svg) top center no-repeat;
+    background: white url(../images/bg-pattern-mobile.svg) top center no-repeat;
     margin-top: 200px;
     padding-top: 0;
     background-size: 400px;
@@ -201,7 +201,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
     background-color: white;
-    background-image: url(../../images/illustration-woman-online-desktop.svg), url(../../images/bg-pattern-desktop.svg);
+    background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
     background-position: -82px 53px, -541px -269px;
     background-repeat: no-repeat;
     background-size: 51%, 100%;
